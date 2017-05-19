@@ -36,69 +36,46 @@ def LoadStackPeak(fileloc):
 ###############################################################################
 
 # Mouse 1
-SM1IGprewat = LoadStackPeak('/home/brandon/Documents/FrontiersConference/FullPeakData/Surface Coil 082016/Mouse 1/Igwat/'
-                           'Mouse_1_Pre_Igwat_WAT.mat')
-SM1IGpremus = LoadStackPeak('/home/brandon/Documents/FrontiersConference/FullPeakData/Surface Coil 082016/Mouse 1/Igwat/'
-                           'Mouse_1_Pre_Igwat_Muscle.mat')
-SM1ICprewat = LoadStackPeak('/home/brandon/Documents/FrontiersConference/FullPeakData/Surface Coil 082016/Mouse 1/Intercap/'
-                           'Mouse_1_Pre_Intercap_WAT.mat')
+SM1IGprewat = LoadStackPeak('Mouse_1_Pre_Igwat_WAT.mat')
+SM1IGpremus = LoadStackPeak('Mouse_1_Pre_Igwat_Muscle.mat')
+SM1ICprewat = LoadStackPeak('Mouse_1_Pre_Intercap_WAT.mat')
 
-SM1ICprebat = LoadStackPeak('/home/brandon/Documents/FrontiersConference/FullPeakData/Surface Coil 082016/Mouse 1/Intercap/'
-                           'Mouse_1_Pre_Intercap_BAT.mat')
-SM1ICpremus = LoadStackPeak('/home/brandon/Documents/FrontiersConference/FullPeakData/Surface Coil 082016/Mouse 1/Intercap/'
-                           'Mouse_1_Pre_Intercap_Muscle.mat')
+SM1ICprebat = LoadStackPeak('Mouse_1_Pre_Intercap_BAT.mat')
+SM1ICpremus = LoadStackPeak('Mouse_1_Pre_Intercap_Muscle.mat')
 
 # Mouse 2
-SM2IGprewat = LoadStackPeak('/home/brandon/Documents/FrontiersConference/FullPeakData/Surface Coil 082016/Mouse 2/Igwat/'
-                           'Mouse_2_Pre_Igwat_WAT.mat')
+SM2IGprewat = LoadStackPeak('Mouse_2_Pre_Igwat_WAT.mat')
 
-SM2IGpremus = LoadStackPeak('/home/brandon/Documents/FrontiersConference/FullPeakData/Surface Coil 082016/Mouse 2/Igwat/'
-                           'Mouse_2_Pre_Igwat_Muscle.mat')
-SM2ICprewat = LoadStackPeak('/home/brandon/Documents/FrontiersConference/FullPeakData/Surface Coil 082016/Mouse 2/Intercap/'
-                           'Mouse_2_Pre_Intercap_WAT.mat')
-SM2ICprebat = LoadStackPeak('/home/brandon/Documents/FrontiersConference/FullPeakData/Surface Coil 082016/Mouse 2/Intercap/'
-                           'Mouse_2_Pre_Intercap_BAT.mat')
-SM2ICpremus = LoadStackPeak('/home/brandon/Documents/FrontiersConference/FullPeakData/Surface Coil 082016/Mouse 2/Intercap/'
-                           'Mouse_2_Pre_Intercap_Muscle.mat')
+SM2IGpremus = LoadStackPeak('Mouse_2_Pre_Igwat_Muscle.mat')
+SM2ICprewat = LoadStackPeak('Mouse_2_Pre_Intercap_WAT.mat')
+SM2ICprebat = LoadStackPeak('Mouse_2_Pre_Intercap_BAT.mat')
+SM2ICpremus = LoadStackPeak('Mouse_2_Pre_Intercap_Muscle.mat')
 
 ###############################################################################
 # Load Volume Coil Mice Data
 ###############################################################################
 
 #Mouse 1
-VM1IGprewat = LoadStackPeak('/home/brandon/Documents/FrontiersConference/FullPeakData/Volume Coil 022016/Mouse 1/Igwat/'
-                           'Mouse_1_Pre_Igwat_WAT.mat')
-VM1IGpremus = LoadStackPeak('/home/brandon/Documents/FrontiersConference/FullPeakData/Volume Coil 022016/Mouse 1/Igwat/'
-                           'Mouse_1_Pre_Igwat_Muscle.mat')
+VM1IGprewat = LoadStackPeak('Mouse_1_Pre_Igwat_WAT.mat')
+VM1IGpremus = LoadStackPeak('Mouse_1_Pre_Igwat_Muscle.mat')
 
-VM1ICprewat = LoadStackPeak('/home/brandon/Documents/FrontiersConference/FullPeakData/Volume Coil 022016/Mouse 1/Intercap/'
-                           'Mouse_1_Pre_Intercap_WAT.mat')
-VM1ICprebat = LoadStackPeak('/home/brandon/Documents/FrontiersConference/FullPeakData/Volume Coil 022016/Mouse 1/Intercap/'
-                           'Mouse_1_Pre_Intercap_BAT.mat')
-VM1ICpremus = LoadStackPeak('/home/brandon/Documents/FrontiersConference/FullPeakData/Volume Coil 022016/Mouse 1/Intercap/'
-                           'Mouse_1_Pre_Intercap_Muscle.mat')
+VM1ICprewat = LoadStackPeak('Mouse_1_Pre_Intercap_WAT.mat')
+VM1ICprebat = LoadStackPeak('Mouse_1_Pre_Intercap_BAT.mat')
+VM1ICpremus = LoadStackPeak('Mouse_1_Pre_Intercap_Muscle.mat')
 
 # Mouse 3
-VM3IGprewat = LoadStackPeak('/home/brandon/Documents/FrontiersConference/FullPeakData/Volume Coil 022016/Mouse 3/Igwat/'
-                           'Mouse_3_Pre_Igwat_WAT.mat')
-VM3IGpremus = LoadStackPeak('/home/brandon/Documents/FrontiersConference/FullPeakData/Volume Coil 022016/Mouse 3/Igwat/'
-                           'Mouse_3_Pre_Igwat_Muscle.mat')
+VM3IGprewat = LoadStackPeak('Mouse_3_Pre_Igwat_WAT.mat')
+VM3IGpremus = LoadStackPeak('Mouse_3_Pre_Igwat_Muscle.mat')
 
 # Mouse 4
-VM4ICprewat = LoadStackPeak('/home/brandon/Documents/FrontiersConference/FullPeakData/Volume Coil 022016/Mouse 4/Intercap/'
-                           'Mouse_4_Pre_Intercap_WAT.mat')
-VM4ICprebat = LoadStackPeak('/home/brandon/Documents/FrontiersConference/FullPeakData/Volume Coil 022016/Mouse 4/Intercap/'
-                           'Mouse_4_Pre_Intercap_BAT.mat')
-VM4ICpremus = LoadStackPeak('/home/brandon/Documents/FrontiersConference/FullPeakData/Volume Coil 022016/Mouse 4/Intercap/'
-                           'Mouse_4_Pre_Intercap_Muscle.mat')
+VM4ICprewat = LoadStackPeak('Mouse_4_Pre_Intercap_WAT.mat')
+VM4ICprebat = LoadStackPeak('Mouse_4_Pre_Intercap_BAT.mat')
+VM4ICpremus = LoadStackPeak('Mouse_4_Pre_Intercap_Muscle.mat')
 
 # Mouse 5
-VM5ICprewat = LoadStackPeak('/home/brandon/Documents/FrontiersConference/FullPeakData/Volume Coil 022016/Mouse 5/Intercap/'
-                           'Mouse_5_Pre_Intercap_WAT.mat')
-VM5ICprebat = LoadStackPeak('/home/brandon/Documents/FrontiersConference/FullPeakData/Volume Coil 022016/Mouse 5/Intercap/'
-                           'Mouse_5_Pre_Intercap_BAT.mat')
-VM5ICpremus = LoadStackPeak('/home/brandon/Documents/FrontiersConference/FullPeakData/Volume Coil 022016/Mouse 5/Intercap/'
-                           'Mouse_5_Pre_Intercap_Muscle.mat')
+VM5ICprewat = LoadStackPeak('Mouse_5_Pre_Intercap_WAT.mat')
+VM5ICprebat = LoadStackPeak('Mouse_5_Pre_Intercap_BAT.mat')
+VM5ICpremus = LoadStackPeak('Mouse_5_Pre_Intercap_Muscle.mat')
 
 ###############################################################################
 # Standardize and Organize
