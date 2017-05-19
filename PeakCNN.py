@@ -106,6 +106,12 @@ VM5ICpremus = LoadStackPeak('/home/brandon/Documents/FrontiersConference/FullPea
 
 min_max_scaler = preprocessing.MinMaxScaler()
 
+''' 
+Training and testing data has been roughly organized to make 70% of the data for
+testing and 30% for training while not including the same mouse in either set.
+The idea is that if the testing and training datasets are not related then the 
+classifier will be more robust.
+'''
 WAT_training = np.transpose(np.hstack((SM1ICprewat,SM2ICprewat, SM2IGprewat,
                                        VM1ICprewat, VM5ICprewat)))
 WAT_test = np.transpose(np.hstack((SM1IGprewat, VM1IGprewat, VM3IGprewat,
