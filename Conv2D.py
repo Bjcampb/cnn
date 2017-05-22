@@ -22,6 +22,7 @@ def LoadStackPeak(fileloc):
     return PeakData
 
 def Standardize(dataset):
+    """ Dataset format (Samples, Row, Col, Depth) """
     z_score = np.zeros(np.shape(dataset))
     for i in range(np.shape(dataset)[3]):
         z_score[:,:,:,i] = (dataset[:,:,:,i] - dataset[:,:,:,i].mean()) / dataset[:,:,:,i].std()
@@ -32,50 +33,29 @@ def Standardize(dataset):
 ###############################################################################
 
 # Volume Coil Data
-VCM1IG_mus = LoadStackPeak('/home/brandon/Documents/CNN2D/Datasets/'
-                           'aug_mouse_1_pre_igwat_mus.mat')
-VCM1IG_wat = LoadStackPeak('/home/brandon/Documents/CNN2D/Datasets/'
-                           'aug_mouse_1_pre_igwat_wat.mat')
-VCM1IC_bat = LoadStackPeak('/home/brandon/Documents/CNN2D/Datasets/'
-                           'aug_mouse_1_pre_intercap_bat.mat')
-VCM1IC_mus = LoadStackPeak('/home/brandon/Documents/CNN2D/Datasets/'
-                           'aug_mouse_1_pre_intercap_muscle.mat')
-VCM2IG_mus = LoadStackPeak('/home/brandon/Documents/CNN2D/Datasets/'
-                           'aug_mouse_2_pre_igwat_muscle.mat')
-VCM2IG_wat = LoadStackPeak('/home/brandon/Documents/CNN2D/Datasets/'
-                           'aug_mouse_2_pre_igwat_wat.mat')
-VCM2IC_bat = LoadStackPeak('/home/brandon/Documents/CNN2D/Datasets/'
-                           'aug_mouse_2_pre_intercap_bat.mat')
-VCM2IC_mus = LoadStackPeak('/home/brandon/Documents/CNN2D/Datasets/'
-                           'aug_mouse_2_pre_intercap_muscle.mat')
+VCM1IG_mus = LoadStackPeak('aug_mouse_1_pre_igwat_mus.mat')
+VCM1IG_wat = LoadStackPeak('aug_mouse_1_pre_igwat_wat.mat')
+VCM1IC_bat = LoadStackPeak('aug_mouse_1_pre_intercap_bat.mat')
+VCM1IC_mus = LoadStackPeak('aug_mouse_1_pre_intercap_muscle.mat')
+VCM2IG_mus = LoadStackPeak('aug_mouse_2_pre_igwat_muscle.mat')
+VCM2IG_wat = LoadStackPeak('aug_mouse_2_pre_igwat_wat.mat')
+VCM2IC_bat = LoadStackPeak('aug_mouse_2_pre_intercap_bat.mat')
+VCM2IC_mus = LoadStackPeak('aug_mouse_2_pre_intercap_muscle.mat')
 
 # Surface Coil Data
-SCM1IG_mus = LoadStackPeak('/home/brandon/Documents/CNN2D/Datasets/'
-                           'feb_mouse_1_pre_igwat_muscle.mat')
-SCM1IG_wat = LoadStackPeak('/home/brandon/Documents/CNN2D/Datasets/'
-                           'feb_mouse_1_pre_igwat_wat.mat')
-SCM1IC_bat = LoadStackPeak('/home/brandon/Documents/CNN2D/Datasets/'
-                           'feb_mouse_1_pre_intercap_bat.mat')
-SCM1IC_mus = LoadStackPeak('/home/brandon/Documents/CNN2D/Datasets/'
-                           'feb_mouse_1_pre_intercap_muscle.mat')
-SCM1IC_wat = LoadStackPeak('/home/brandon/Documents/CNN2D/Datasets/'
-                           'feb_mouse_1_pre_intercap_wat.mat')
-SCM3IG_mus = LoadStackPeak('/home/brandon/Documents/CNN2D/Datasets/'
-                           'feb_mouse_3_pre_igwat_muscle.mat')
-SCM3IG_wat = LoadStackPeak('/home/brandon/Documents/CNN2D/Datasets/'
-                           'feb_mouse_3_pre_igwat_wat.mat')
-SCM4IC_bat = LoadStackPeak('/home/brandon/Documents/CNN2D/Datasets/'
-                           'feb_mouse_4_pre_intercap_bat.mat')
-SCM4IC_mus = LoadStackPeak('/home/brandon/Documents/CNN2D/Datasets/'
-                           'feb_mouse_4_pre_intercap_muscle.mat')
-SCM4IC_wat = LoadStackPeak('/home/brandon/Documents/CNN2D/Datasets/'
-                           'feb_mouse_4_pre_intercap_wat.mat')
-SCM5IC_bat = LoadStackPeak('/home/brandon/Documents/CNN2D/Datasets/'
-                           'feb_mouse_5_pre_intercap_bat.mat')
-SCM5IC_mus = LoadStackPeak('/home/brandon/Documents/CNN2D/Datasets/'
-                           'feb_mouse_5_pre_intercap_muscle.mat')
-SCM5IC_wat = LoadStackPeak('/home/brandon/Documents/CNN2D/Datasets/'
-                           'feb_mouse_5_pre_intercap_wat.mat')
+SCM1IG_mus = LoadStackPeak('feb_mouse_1_pre_igwat_muscle.mat')
+SCM1IG_wat = LoadStackPeak('feb_mouse_1_pre_igwat_wat.mat')
+SCM1IC_bat = LoadStackPeak('feb_mouse_1_pre_intercap_bat.mat')
+SCM1IC_mus = LoadStackPeak('feb_mouse_1_pre_intercap_muscle.mat')
+SCM1IC_wat = LoadStackPeak('feb_mouse_1_pre_intercap_wat.mat')
+SCM3IG_mus = LoadStackPeak('feb_mouse_3_pre_igwat_muscle.mat')
+SCM3IG_wat = LoadStackPeak('feb_mouse_3_pre_igwat_wat.mat')
+SCM4IC_bat = LoadStackPeak('feb_mouse_4_pre_intercap_bat.mat')
+SCM4IC_mus = LoadStackPeak('feb_mouse_4_pre_intercap_muscle.mat')
+SCM4IC_wat = LoadStackPeak('feb_mouse_4_pre_intercap_wat.mat')
+SCM5IC_bat = LoadStackPeak('feb_mouse_5_pre_intercap_bat.mat')
+SCM5IC_mus = LoadStackPeak('feb_mouse_5_pre_intercap_muscle.mat')
+SCM5IC_wat = LoadStackPeak('feb_mouse_5_pre_intercap_wat.mat')
 
 ###############################################################################
 # Standardize and Organize
